@@ -180,7 +180,7 @@ input,select{font:inherit;}
 }
 .brand-card__overlay{
   position:absolute;inset:0;z-index:1;
-  background:linear-gradient(180deg,rgba(8,8,8,.25) 0%,rgba(8,8,8,.55) 45%,rgba(8,8,8,.94) 100%);
+  background:linear-gradient(180deg,rgba(8,8,8,.05) 0%,rgba(8,8,8,.3) 40%,rgba(8,8,8,.88) 78%,rgba(8,8,8,.94) 100%);
 }
 .brand-card__content{position:relative;z-index:2;}
 .brand-card__monogram{

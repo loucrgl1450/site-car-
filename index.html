@@ -104,30 +104,56 @@
       <div class="brand-card">
         <svg class="brand-card__headlight" viewBox="0 0 420 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <radialGradient id="xenonGlow" cx="50%" cy="42%" r="60%">
-              <stop offset="0%" stop-color="#eaf4ff"/>
-              <stop offset="22%" stop-color="#8fc4ff"/>
-              <stop offset="55%" stop-color="#0066FF" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="housingGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#1c1c1e"/>
-              <stop offset="100%" stop-color="#020203"/>
+            <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#141416"/>
+              <stop offset="55%" stop-color="#050506"/>
+              <stop offset="100%" stop-color="#000000"/>
+            </linearGradient>
+            <linearGradient id="reflectGrad" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stop-color="#3d8bff" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#9cc6ff" stop-opacity=".22"/>
+              <stop offset="100%" stop-color="#3d8bff" stop-opacity="0"/>
             </linearGradient>
             <linearGradient id="drlGrad" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-              <stop offset="50%" stop-color="#bfe0ff"/>
+              <stop offset="50%" stop-color="#eaf4ff"/>
               <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
             </linearGradient>
+            <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="35%" stop-color="#eaf4ff" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#8fc4ff" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+              <feGaussianBlur stdDeviation="5"/>
+            </filter>
+            <filter id="softglow" x="-150%" y="-150%" width="400%" height="400%">
+              <feGaussianBlur stdDeviation="13"/>
+            </filter>
           </defs>
-          <rect width="420" height="420" fill="url(#housingGrad)"/>
-          <circle cx="210" cy="180" r="150" fill="url(#xenonGlow)"/>
-          <circle cx="210" cy="180" r="86" fill="none" stroke="#3d8bff" stroke-width="2" opacity="0.55"/>
-          <circle cx="210" cy="180" r="66" fill="none" stroke="#66B2FF" stroke-width="1.5" opacity="0.45"/>
-          <circle cx="210" cy="180" r="46" fill="url(#xenonGlow)"/>
-          <circle cx="210" cy="180" r="20" fill="#f4f9ff"/>
-          <path d="M30 300 L390 258 L390 278 L30 322 Z" fill="url(#drlGrad)" opacity="0.85"/>
-          <path d="M50 332 L370 296 L370 306 L50 344 Z" fill="url(#drlGrad)" opacity="0.5"/>
+
+          <rect width="420" height="420" fill="url(#bodyGrad)"/>
+          <path d="M-40 400 L210 -40 L270 -40 L30 400 Z" fill="url(#reflectGrad)" filter="url(#softglow)"/>
+
+          <path d="M20 128 C 120 55, 270 50, 392 132" fill="none" stroke="url(#drlGrad)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+          <path d="M20 128 C 120 55, 270 50, 392 132" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity=".9"/>
+
+          <circle cx="158" cy="248" r="60" fill="none" stroke="#eaf4ff" stroke-width="18" opacity=".35" filter="url(#softglow)"/>
+          <circle cx="158" cy="248" r="60" fill="none" stroke="#ffffff" stroke-width="4" opacity="1"/>
+          <circle cx="266" cy="256" r="50" fill="none" stroke="#eaf4ff" stroke-width="14" opacity=".28" filter="url(#softglow)"/>
+          <circle cx="266" cy="256" r="50" fill="none" stroke="#dceeff" stroke-width="3" opacity=".85"/>
+
+          <circle cx="158" cy="248" r="26" fill="url(#coreGlow)" filter="url(#softglow)"/>
+          <circle cx="158" cy="248" r="12" fill="#ffffff"/>
+          <g stroke="#ffffff" stroke-linecap="round">
+            <line x1="158" y1="248" x2="70" y2="170" stroke-width="1.5" opacity=".55"/>
+            <line x1="158" y1="248" x2="40" y2="248" stroke-width="1" opacity=".35"/>
+            <line x1="158" y1="248" x2="158" y2="150" stroke-width="1" opacity=".4"/>
+            <line x1="158" y1="248" x2="110" y2="320" stroke-width="1" opacity=".3"/>
+          </g>
+
+          <circle cx="266" cy="256" r="16" fill="url(#coreGlow)" filter="url(#softglow)" opacity=".85"/>
+          <circle cx="266" cy="256" r="7" fill="#f4f9ff"/>
         </svg>
         <div class="brand-card__overlay"></div>
         <div class="brand-card__content">
