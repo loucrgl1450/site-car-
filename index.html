@@ -115,59 +115,52 @@
         <svg class="brand-card__headlight" viewBox="0 0 420 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#141416"/>
-              <stop offset="55%" stop-color="#050506"/>
+              <stop offset="0%" stop-color="#1c1e22"/>
+              <stop offset="45%" stop-color="#08090b"/>
               <stop offset="100%" stop-color="#000000"/>
             </linearGradient>
-            <linearGradient id="reflectGrad" x1="0" y1="1" x2="1" y2="0">
+            <linearGradient id="sweepGrad" x1="0" y1="1" x2="1" y2="0">
               <stop offset="0%" stop-color="#3d8bff" stop-opacity="0"/>
-              <stop offset="50%" stop-color="#9cc6ff" stop-opacity=".22"/>
+              <stop offset="45%" stop-color="#bcdcff" stop-opacity=".65"/>
+              <stop offset="55%" stop-color="#eaf4ff" stop-opacity=".85"/>
+              <stop offset="65%" stop-color="#bcdcff" stop-opacity=".65"/>
               <stop offset="100%" stop-color="#3d8bff" stop-opacity="0"/>
             </linearGradient>
-            <linearGradient id="drlGrad" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-              <stop offset="50%" stop-color="#eaf4ff"/>
-              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            <linearGradient id="sweepGrad2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stop-color="#0066FF" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#3d8bff" stop-opacity=".35"/>
+              <stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
             </linearGradient>
-            <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#ffffff"/>
-              <stop offset="35%" stop-color="#eaf4ff" stop-opacity=".9"/>
-              <stop offset="100%" stop-color="#8fc4ff" stop-opacity="0"/>
+            <radialGradient id="rimGlow" cx="100%" cy="0%" r="75%">
+              <stop offset="0%" stop-color="#0066FF" stop-opacity=".5"/>
+              <stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
             </radialGradient>
-            <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-              <feGaussianBlur stdDeviation="5"/>
-            </filter>
             <filter id="softglow" x="-150%" y="-150%" width="400%" height="400%">
-              <feGaussianBlur stdDeviation="13"/>
+              <feGaussianBlur stdDeviation="12"/>
             </filter>
           </defs>
 
           <rect width="420" height="420" fill="url(#bodyGrad)"/>
-          <path d="M-40 400 L210 -40 L270 -40 L30 400 Z" fill="url(#reflectGrad)" filter="url(#softglow)"/>
+          <rect width="420" height="420" fill="url(#rimGlow)"/>
 
-          <path d="M20 128 C 120 55, 270 50, 392 132" fill="none" stroke="url(#drlGrad)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
-          <path d="M20 128 C 120 55, 270 50, 392 132" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity=".9"/>
+          <path d="M-60 260 C 60 160, 160 140, 260 90 C 320 60, 380 40, 470 10 L470 60 C 380 90, 320 110, 260 140 C 160 190, 60 210, -60 310 Z" fill="none" stroke="#1f2126" stroke-width="1" opacity=".6"/>
 
-          <circle cx="158" cy="248" r="60" fill="none" stroke="#eaf4ff" stroke-width="18" opacity=".35" filter="url(#softglow)"/>
-          <circle cx="158" cy="248" r="60" fill="none" stroke="#ffffff" stroke-width="4" opacity="1"/>
-          <circle cx="266" cy="256" r="50" fill="none" stroke="#eaf4ff" stroke-width="14" opacity=".28" filter="url(#softglow)"/>
-          <circle cx="266" cy="256" r="50" fill="none" stroke="#dceeff" stroke-width="3" opacity=".85"/>
+          <path d="M-80 330 L260 -40 L300 -40 L-40 330 Z" fill="url(#sweepGrad2)" filter="url(#softglow)"/>
+          <path d="M-40 300 L230 -20 L255 -20 L-15 300 Z" fill="url(#sweepGrad)" filter="url(#softglow)"/>
+          <path d="M-20 285 L245 -10 L253 -10 L-12 285 Z" fill="#ffffff" opacity=".5"/>
 
-          <circle cx="158" cy="248" r="26" fill="url(#coreGlow)" filter="url(#softglow)"/>
-          <circle cx="158" cy="248" r="12" fill="#ffffff"/>
-          <g stroke="#ffffff" stroke-linecap="round">
-            <line x1="158" y1="248" x2="70" y2="170" stroke-width="1.5" opacity=".55"/>
-            <line x1="158" y1="248" x2="40" y2="248" stroke-width="1" opacity=".35"/>
-            <line x1="158" y1="248" x2="158" y2="150" stroke-width="1" opacity=".4"/>
-            <line x1="158" y1="248" x2="110" y2="320" stroke-width="1" opacity=".3"/>
+          <g opacity=".8">
+            <circle cx="120" cy="150" r="3" fill="#bcdcff"/>
+            <circle cx="150" cy="210" r="2" fill="#eaf4ff"/>
+            <circle cx="245" cy="120" r="2.5" fill="#bcdcff"/>
+            <circle cx="300" cy="180" r="1.8" fill="#eaf4ff"/>
+            <circle cx="85" cy="240" r="1.6" fill="#bcdcff"/>
+            <circle cx="330" cy="260" r="2" fill="#eaf4ff"/>
           </g>
-
-          <circle cx="266" cy="256" r="16" fill="url(#coreGlow)" filter="url(#softglow)" opacity=".85"/>
-          <circle cx="266" cy="256" r="7" fill="#f4f9ff"/>
         </svg>
         <div class="brand-card__overlay"></div>
         <div class="brand-card__content">
-          <div class="brand-card__monogram">
+          <div class="brand-card__monogram brand-card__monogram--sm">
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="blueGradHero" x1="0" y1="0" x2="1" y2="1">
@@ -192,18 +185,9 @@
               </g>
             </svg>
           </div>
-          <h3 class="brand-card__name">Speed<span>&</span>Clean</h3>
-          <p class="brand-card__role">Préparateur Esthétique Automobile<br>Particulier &amp; Professionnel</p>
-          <div class="brand-card__divider"></div>
-          <div class="brand-card__badges">
-            <div class="brand-card__badge">
-              <strong>+10 ans</strong>
-              <span>d'expérience</span>
-            </div>
-            <div class="brand-card__badge">
-              <strong>Boris Corniere</strong>
-              <span>Expert detailing</span>
-            </div>
+          <div class="brand-card__footerbadge">
+            <strong>Boris Corniere</strong>
+            <span>+10 ans d'expérience &middot; Particulier &amp; Professionnel</span>
           </div>
         </div>
       </div>
