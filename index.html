@@ -12,7 +12,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -20,6 +20,15 @@
   "@type": "AutoWash",
   "name": "Speed & Clean",
   "description": "Detailing automobile premium : nettoyage intérieur/extérieur, déstickage, lustrage, rénovation d'optiques.",
+  "telephone": "+33662291553",
+  "email": "boriscorniere9@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "72 Route de Beaupuy",
+    "postalCode": "85000",
+    "addressLocality": "Mouilleron-le-Captif",
+    "addressCountry": "FR"
+  },
   "priceRange": "€€",
   "openingHours": "Mo-Sa 09:00-19:00"
 }
@@ -73,7 +82,6 @@
     <div class="hero__grid"></div>
     <div class="hero__glow hero__glow--1"></div>
     <div class="hero__glow hero__glow--2"></div>
-    <div class="hero__scanline"></div>
   </div>
 
   <div class="container hero__inner">
@@ -88,42 +96,34 @@
       <div class="hero__stats">
         <div class="hero__stat"><strong>500+</strong><span>Véhicules traités</span></div>
         <div class="hero__stat"><strong>100%</strong><span>Passion automobile</span></div>
-        <div class="hero__stat"><strong>5★</strong><span>Satisfaction client</span></div>
+        <div class="hero__stat"><strong>10+</strong><span>Années d'expérience</span></div>
       </div>
     </div>
 
     <div class="hero__visual" data-reveal>
-      <div class="car-stage">
-        <div class="car-stage__reflection"></div>
-        <svg class="car-svg" viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#1a1a1a"/>
-              <stop offset="45%" stop-color="#050505"/>
-              <stop offset="100%" stop-color="#000000"/>
-            </linearGradient>
-            <linearGradient id="glassGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#66B2FF" stop-opacity="0.6"/>
-              <stop offset="100%" stop-color="#0066FF" stop-opacity="0.2"/>
-            </linearGradient>
-            <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-              <stop offset="50%" stop-color="#ffffff" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-          <ellipse cx="300" cy="235" rx="230" ry="14" fill="#0066FF" opacity="0.18"/>
-          <path d="M40 190 C40 150 90 145 130 130 C170 90 230 70 300 70 C370 70 420 95 460 130 C505 140 560 150 560 190 L560 205 C560 215 550 220 540 220 L60 220 C50 220 40 215 40 205 Z" fill="url(#bodyGrad)" stroke="#0066FF" stroke-width="1.5" stroke-opacity="0.5"/>
-          <path d="M150 128 C185 95 235 78 300 78 C365 78 410 95 445 128 L420 132 C390 108 350 100 300 100 C250 100 210 108 180 132 Z" fill="url(#glassGrad)"/>
-          <rect x="40" y="150" width="520" height="6" fill="url(#shine)" class="shine-bar"/>
-          <circle cx="150" cy="215" r="32" fill="#0a0a0a" stroke="#C0C0C0" stroke-width="4"/>
-          <circle cx="150" cy="215" r="14" fill="#C0C0C0" opacity="0.7"/>
-          <circle cx="450" cy="215" r="32" fill="#0a0a0a" stroke="#C0C0C0" stroke-width="4"/>
-          <circle cx="450" cy="215" r="14" fill="#C0C0C0" opacity="0.7"/>
-          <circle class="droplet" cx="120" cy="100" r="3" fill="#66B2FF"/>
-          <circle class="droplet droplet--2" cx="380" cy="90" r="2.5" fill="#66B2FF"/>
-          <circle class="droplet droplet--3" cx="480" cy="150" r="2" fill="#ffffff"/>
-        </svg>
+      <div class="brand-card">
+        <div class="brand-card__glow"></div>
+        <div class="brand-card__monogram">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 30L10 18C11 15 13 13 17 13H31C35 13 37 15 38 18L42 30" stroke="#0066FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 30H44V35C44 36.6569 42.6569 38 41 38H37C35.3431 38 34 36.6569 34 35V33H14V35C14 36.6569 12.6569 38 11 38H7C5.34315 38 4 36.6569 4 35V30Z" stroke="#0066FF" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="14" cy="30" r="3" fill="#0066FF"/>
+            <circle cx="34" cy="30" r="3" fill="#0066FF"/>
+          </svg>
+        </div>
+        <h3 class="brand-card__name">Speed<span>&</span>Clean</h3>
+        <p class="brand-card__role">Préparateur Esthétique Automobile<br>Particulier &amp; Professionnel</p>
+        <div class="brand-card__divider"></div>
+        <div class="brand-card__badges">
+          <div class="brand-card__badge">
+            <strong>+10 ans</strong>
+            <span>d'expérience</span>
+          </div>
+          <div class="brand-card__badge">
+            <strong>Boris Corniere</strong>
+            <span>Expert detailing</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -149,18 +149,24 @@
           <span class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none"><path d="M4 17V9a2 2 0 012-2h12a2 2 0 012 2v8" stroke="#C0C0C0" stroke-width="1.6"/><path d="M2 17h20v2a1 1 0 01-1 1H3a1 1 0 01-1-1v-2z" stroke="#C0C0C0" stroke-width="1.6"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="#C0C0C0" stroke-width="1.6"/></svg>
           </span>
+          <div class="service-card__media-text">
+            <h3>Nettoyage intérieur</h3>
+            <p>L'essentiel pour un habitacle propre</p>
+          </div>
         </div>
         <div class="service-card__body">
-          <h3>Nettoyage intérieur</h3>
-          <p>Un intérieur propre, sain et comme neuf grâce à un nettoyage complet des surfaces, sièges, tapis et plastiques.</p>
-          <ul class="service-card__list">
-            <li>Aspiration complète</li>
-            <li>Nettoyage des sièges</li>
-            <li>Nettoyage des plastiques</li>
-            <li>Désinfection</li>
-            <li>Traitement des surfaces</li>
+          <div class="service-card__meta">
+            <span class="service-card__price">À partir de <strong>49€</strong></span>
+            <span class="service-card__duration"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>1h - 1h30</span>
+          </div>
+          <ul class="service-card__checklist">
+            <li><span class="check-badge">✓</span>Aspiration complète</li>
+            <li><span class="check-badge">✓</span>Nettoyage des sièges</li>
+            <li><span class="check-badge">✓</span>Nettoyage des plastiques</li>
+            <li><span class="check-badge">✓</span>Désinfection</li>
+            <li><span class="check-badge">✓</span>Traitement des surfaces</li>
           </ul>
-          <a href="#reservation" class="card-link">Découvrir <span>→</span></a>
+          <a href="#reservation" class="btn-choose">Choisir cette formule <span>→</span></a>
         </div>
       </article>
 
@@ -169,18 +175,24 @@
           <span class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none"><path d="M3 12l2-5a3 3 0 013-2h8a3 3 0 013 2l2 5" stroke="#C0C0C0" stroke-width="1.6"/><rect x="2" y="12" width="20" height="6" rx="2" stroke="#C0C0C0" stroke-width="1.6"/><circle cx="7" cy="18" r="1.6" fill="#C0C0C0"/><circle cx="17" cy="18" r="1.6" fill="#C0C0C0"/></svg>
           </span>
+          <div class="service-card__media-text">
+            <h3>Nettoyage extérieur</h3>
+            <p>Une finition carrosserie impeccable</p>
+          </div>
         </div>
         <div class="service-card__body">
-          <h3>Nettoyage extérieur</h3>
-          <p>Un lavage professionnel respectueux de votre carrosserie pour retrouver une finition impeccable.</p>
-          <ul class="service-card__list">
-            <li>Prélavage</li>
-            <li>Lavage carrosserie</li>
-            <li>Nettoyage des jantes</li>
-            <li>Séchage professionnel</li>
-            <li>Protection de finition</li>
+          <div class="service-card__meta">
+            <span class="service-card__price">À partir de <strong>39€</strong></span>
+            <span class="service-card__duration"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>45min - 1h</span>
+          </div>
+          <ul class="service-card__checklist">
+            <li><span class="check-badge">✓</span>Prélavage</li>
+            <li><span class="check-badge">✓</span>Lavage carrosserie</li>
+            <li><span class="check-badge">✓</span>Nettoyage des jantes</li>
+            <li><span class="check-badge">✓</span>Séchage professionnel</li>
+            <li><span class="check-badge">✓</span>Protection de finition</li>
           </ul>
-          <a href="#reservation" class="card-link">Découvrir <span>→</span></a>
+          <a href="#reservation" class="btn-choose">Choisir cette formule <span>→</span></a>
         </div>
       </article>
 
@@ -189,17 +201,23 @@
           <span class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none"><path d="M4 20L14 10" stroke="#C0C0C0" stroke-width="1.6" stroke-linecap="round"/><path d="M13 4l7 7-3 3-7-7 1.5-1.5" stroke="#C0C0C0" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 20l2-6 4 4-6 2z" stroke="#C0C0C0" stroke-width="1.6" stroke-linejoin="round"/></svg>
           </span>
+          <div class="service-card__media-text">
+            <h3>Déstickage</h3>
+            <p>Retrait propre, sans trace ni dommage</p>
+          </div>
         </div>
         <div class="service-card__body">
-          <h3>Déstickage</h3>
-          <p>Retrait professionnel des stickers, adhésifs et marquages sans abîmer votre carrosserie.</p>
-          <ul class="service-card__list">
-            <li>Suppression de stickers</li>
-            <li>Retrait de colle</li>
-            <li>Nettoyage des traces</li>
-            <li>Finition carrosserie</li>
+          <div class="service-card__meta">
+            <span class="service-card__price">À partir de <strong>59€</strong></span>
+            <span class="service-card__duration"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>1h - 2h</span>
+          </div>
+          <ul class="service-card__checklist">
+            <li><span class="check-badge">✓</span>Suppression de stickers</li>
+            <li><span class="check-badge">✓</span>Retrait de colle</li>
+            <li><span class="check-badge">✓</span>Nettoyage des traces</li>
+            <li><span class="check-badge">✓</span>Finition carrosserie</li>
           </ul>
-          <a href="#reservation" class="card-link">Découvrir <span>→</span></a>
+          <a href="#reservation" class="btn-choose">Choisir cette formule <span>→</span></a>
         </div>
       </article>
 
@@ -208,16 +226,22 @@
           <span class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C0C0C0" stroke-width="1.6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="#C0C0C0" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="3.5" fill="#C0C0C0" opacity="0.5"/></svg>
           </span>
+          <div class="service-card__media-text">
+            <h3>Lustrage</h3>
+            <p>Profondeur et brillance retrouvées</p>
+          </div>
         </div>
         <div class="service-card__body">
-          <h3>Lustrage</h3>
-          <p>Redonnez profondeur et brillance à votre peinture grâce à un travail de finition professionnel.</p>
-          <ul class="service-card__list">
-            <li>Correction légère des défauts</li>
-            <li>Ravivage de la couleur</li>
-            <li>Brillance longue durée</li>
+          <div class="service-card__meta">
+            <span class="service-card__price">À partir de <strong>89€</strong></span>
+            <span class="service-card__duration"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>2h - 3h</span>
+          </div>
+          <ul class="service-card__checklist">
+            <li><span class="check-badge">✓</span>Correction légère des défauts</li>
+            <li><span class="check-badge">✓</span>Ravivage de la couleur</li>
+            <li><span class="check-badge">✓</span>Brillance longue durée</li>
           </ul>
-          <a href="#reservation" class="card-link">Découvrir <span>→</span></a>
+          <a href="#reservation" class="btn-choose">Choisir cette formule <span>→</span></a>
         </div>
       </article>
 
@@ -226,16 +250,22 @@
           <span class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke="#C0C0C0" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="#C0C0C0" stroke-width="1.6"/></svg>
           </span>
+          <div class="service-card__media-text">
+            <h3>Rénovation d'optiques</h3>
+            <p>Transparence et visibilité restaurées</p>
+          </div>
         </div>
         <div class="service-card__body">
-          <h3>Rénovation d'optiques</h3>
-          <p>Restaurez la transparence de vos phares et améliorez l'esthétique et la visibilité.</p>
-          <ul class="service-card__list">
-            <li>Ponçage professionnel</li>
-            <li>Polissage</li>
-            <li>Protection UV</li>
+          <div class="service-card__meta">
+            <span class="service-card__price">À partir de <strong>45€</strong></span>
+            <span class="service-card__duration"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>45min - 1h</span>
+          </div>
+          <ul class="service-card__checklist">
+            <li><span class="check-badge">✓</span>Ponçage professionnel</li>
+            <li><span class="check-badge">✓</span>Polissage</li>
+            <li><span class="check-badge">✓</span>Protection UV</li>
           </ul>
-          <a href="#reservation" class="card-link">Découvrir <span>→</span></a>
+          <a href="#reservation" class="btn-choose">Choisir cette formule <span>→</span></a>
         </div>
       </article>
 
@@ -245,17 +275,23 @@
           <span class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5L12 2z" stroke="#0066FF" stroke-width="1.6" stroke-linejoin="round" fill="#0066FF" fill-opacity="0.15"/></svg>
           </span>
+          <div class="service-card__media-text">
+            <h3>Detailing automobile</h3>
+            <p>La prestation ultime pour passionnés</p>
+          </div>
         </div>
         <div class="service-card__body">
-          <h3>Detailing automobile</h3>
-          <p>La prestation ultime pour les passionnés souhaitant un résultat exceptionnel.</p>
-          <ul class="service-card__list">
-            <li>Nettoyage minutieux</li>
-            <li>Correction peinture</li>
-            <li>Protection carrosserie</li>
-            <li>Finition premium</li>
+          <div class="service-card__meta">
+            <span class="service-card__price">À partir de <strong>149€</strong></span>
+            <span class="service-card__duration"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>3h - 5h</span>
+          </div>
+          <ul class="service-card__checklist">
+            <li><span class="check-badge">✓</span>Nettoyage minutieux</li>
+            <li><span class="check-badge">✓</span>Correction peinture</li>
+            <li><span class="check-badge">✓</span>Protection carrosserie</li>
+            <li><span class="check-badge">✓</span>Finition premium</li>
           </ul>
-          <a href="#reservation" class="card-link">Découvrir <span>→</span></a>
+          <a href="#reservation" class="btn-choose">Choisir cette formule <span>→</span></a>
         </div>
       </article>
 
@@ -487,9 +523,9 @@
 
     <div class="footer__col">
       <h4>Coordonnées</h4>
-      <p>12 Avenue de l'Automobile<br>75000 Paris</p>
-      <p><a href="tel:+33600000000">06 00 00 00 00</a></p>
-      <p><a href="mailto:contact@speedandclean.fr">contact@speedandclean.fr</a></p>
+      <p>Boris Corniere<br>72 Route de Beaupuy<br>85000 Mouilleron-le-Captif</p>
+      <p><a href="tel:+33662291553">06 62 29 15 53</a></p>
+      <p><a href="mailto:boriscorniere9@gmail.com">boriscorniere9@gmail.com</a></p>
     </div>
 
     <div class="footer__col">
