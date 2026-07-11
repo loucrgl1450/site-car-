@@ -102,26 +102,55 @@
 
     <div class="hero__visual" data-reveal>
       <div class="brand-card">
-        <div class="brand-card__glow"></div>
-        <div class="brand-card__monogram">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 30L10 18C11 15 13 13 17 13H31C35 13 37 15 38 18L42 30" stroke="#0066FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M4 30H44V35C44 36.6569 42.6569 38 41 38H37C35.3431 38 34 36.6569 34 35V33H14V35C14 36.6569 12.6569 38 11 38H7C5.34315 38 4 36.6569 4 35V30Z" stroke="#0066FF" stroke-width="3" stroke-linejoin="round"/>
-            <circle cx="14" cy="30" r="3" fill="#0066FF"/>
-            <circle cx="34" cy="30" r="3" fill="#0066FF"/>
-          </svg>
-        </div>
-        <h3 class="brand-card__name">Speed<span>&</span>Clean</h3>
-        <p class="brand-card__role">Préparateur Esthétique Automobile<br>Particulier &amp; Professionnel</p>
-        <div class="brand-card__divider"></div>
-        <div class="brand-card__badges">
-          <div class="brand-card__badge">
-            <strong>+10 ans</strong>
-            <span>d'expérience</span>
+        <svg class="brand-card__headlight" viewBox="0 0 420 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="xenonGlow" cx="50%" cy="42%" r="60%">
+              <stop offset="0%" stop-color="#eaf4ff"/>
+              <stop offset="22%" stop-color="#8fc4ff"/>
+              <stop offset="55%" stop-color="#0066FF" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="housingGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1c1c1e"/>
+              <stop offset="100%" stop-color="#020203"/>
+            </linearGradient>
+            <linearGradient id="drlGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#bfe0ff"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="420" height="420" fill="url(#housingGrad)"/>
+          <circle cx="210" cy="180" r="150" fill="url(#xenonGlow)"/>
+          <circle cx="210" cy="180" r="86" fill="none" stroke="#3d8bff" stroke-width="2" opacity="0.55"/>
+          <circle cx="210" cy="180" r="66" fill="none" stroke="#66B2FF" stroke-width="1.5" opacity="0.45"/>
+          <circle cx="210" cy="180" r="46" fill="url(#xenonGlow)"/>
+          <circle cx="210" cy="180" r="20" fill="#f4f9ff"/>
+          <path d="M30 300 L390 258 L390 278 L30 322 Z" fill="url(#drlGrad)" opacity="0.85"/>
+          <path d="M50 332 L370 296 L370 306 L50 344 Z" fill="url(#drlGrad)" opacity="0.5"/>
+        </svg>
+        <div class="brand-card__overlay"></div>
+        <div class="brand-card__content">
+          <div class="brand-card__monogram">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 30L10 18C11 15 13 13 17 13H31C35 13 37 15 38 18L42 30" stroke="#0066FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 30H44V35C44 36.6569 42.6569 38 41 38H37C35.3431 38 34 36.6569 34 35V33H14V35C14 36.6569 12.6569 38 11 38H7C5.34315 38 4 36.6569 4 35V30Z" stroke="#0066FF" stroke-width="3" stroke-linejoin="round"/>
+              <circle cx="14" cy="30" r="3" fill="#0066FF"/>
+              <circle cx="34" cy="30" r="3" fill="#0066FF"/>
+            </svg>
           </div>
-          <div class="brand-card__badge">
-            <strong>Boris Corniere</strong>
-            <span>Expert detailing</span>
+          <h3 class="brand-card__name">Speed<span>&</span>Clean</h3>
+          <p class="brand-card__role">Préparateur Esthétique Automobile<br>Particulier &amp; Professionnel</p>
+          <div class="brand-card__divider"></div>
+          <div class="brand-card__badges">
+            <div class="brand-card__badge">
+              <strong>+10 ans</strong>
+              <span>d'expérience</span>
+            </div>
+            <div class="brand-card__badge">
+              <strong>Boris Corniere</strong>
+              <span>Expert detailing</span>
+            </div>
           </div>
         </div>
       </div>
