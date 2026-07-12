@@ -6,10 +6,9 @@ import Logo from './Logo';
 
 const LINKS = [
   { href: '#hero', label: 'Accueil' },
-  { href: '#apropos', label: 'À propos' },
   { href: '#prestations', label: 'Prestations' },
-  { href: '#options', label: 'Options' },
-  { href: '#reservation', label: 'Réservation' },
+  { href: '#avantapres', label: 'Galerie' },
+  { href: '#apropos', label: 'À propos' },
   { href: '#localisation', label: 'Contact' },
 ];
 
@@ -31,7 +30,6 @@ export default function Navbar() {
     };
   }, [open]);
 
-  const textClass = scrolled ? 'text-white' : 'text-ink';
   const linkClass = scrolled ? 'text-silver hover:text-white' : 'text-ink-soft hover:text-ink';
 
   return (
@@ -44,7 +42,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-[1240px] items-center justify-between gap-6 px-6">
         <a href="#hero" aria-label="Retour à l'accueil Speed & Clean" className="shrink-0">
-          <Logo size={scrolled ? 46 : 54} wordmarkClass={textClass} />
+          <Logo height={scrolled ? 44 : 52} priority />
         </a>
 
         <nav aria-label="Navigation principale" className="hidden flex-1 items-center justify-center gap-8 lg:flex">

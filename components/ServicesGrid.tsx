@@ -11,7 +11,7 @@ type Service = {
   icon: JSX.Element;
 };
 
-const stroke = { stroke: '#C0C0C0', strokeWidth: 1.6 };
+const stroke = { stroke: '#B8B7B6', strokeWidth: 1.6 };
 
 const SERVICES: Service[] = [
   {
@@ -20,7 +20,7 @@ const SERVICES: Service[] = [
     description: 'Aspiration complète, sièges, plastiques, désinfection et traitement des surfaces.',
     price: '49€',
     duration: '1h - 1h30',
-    gradient: 'linear-gradient(150deg,#0063CC 0%,#020204 100%)',
+    gradient: 'linear-gradient(150deg,#0C74A0 0%,#020204 100%)',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden>
         <path d="M4 17V9a2 2 0 012-2h12a2 2 0 012 2v8" {...stroke} />
@@ -35,13 +35,13 @@ const SERVICES: Service[] = [
     description: 'Prélavage, lavage carrosserie, jantes, séchage professionnel et protection de finition.',
     price: '39€',
     duration: '45min - 1h',
-    gradient: 'linear-gradient(150deg,#007BFF 0%,#020204 100%)',
+    gradient: 'linear-gradient(150deg,#0E89BA 0%,#020204 100%)',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden>
         <path d="M3 12l2-5a3 3 0 013-2h8a3 3 0 013 2l2 5" {...stroke} />
         <rect x="2" y="12" width="20" height="6" rx="2" {...stroke} />
-        <circle cx="7" cy="18" r="1.6" fill="#C0C0C0" />
-        <circle cx="17" cy="18" r="1.6" fill="#C0C0C0" />
+        <circle cx="7" cy="18" r="1.6" fill="#B8B7B6" />
+        <circle cx="17" cy="18" r="1.6" fill="#B8B7B6" />
       </svg>
     ),
   },
@@ -51,7 +51,7 @@ const SERVICES: Service[] = [
     description: 'Suppression de stickers et adhésifs, retrait de colle, nettoyage des traces, finition.',
     price: '59€',
     duration: '1h - 2h',
-    gradient: 'linear-gradient(150deg,#1a3a66 0%,#020204 100%)',
+    gradient: 'linear-gradient(150deg,#123B4E 0%,#020204 100%)',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden>
         <path d="M4 20L14 10" {...stroke} strokeLinecap="round" />
@@ -66,12 +66,12 @@ const SERVICES: Service[] = [
     description: 'Correction légère des défauts, ravivage de la couleur, brillance longue durée.',
     price: '89€',
     duration: '2h - 3h',
-    gradient: 'linear-gradient(150deg,#2E8FE0 0%,#020204 100%)',
+    gradient: 'linear-gradient(150deg,#2FA3CC 0%,#020204 100%)',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden>
         <circle cx="12" cy="12" r="9" {...stroke} />
         <path d="M12 3v3M12 18v3M3 12h3M18 12h3" {...stroke} strokeLinecap="round" />
-        <circle cx="12" cy="12" r="3.5" fill="#C0C0C0" opacity="0.5" />
+        <circle cx="12" cy="12" r="3.5" fill="#B8B7B6" opacity="0.5" />
       </svg>
     ),
   },
@@ -81,7 +81,7 @@ const SERVICES: Service[] = [
     description: 'Ponçage professionnel, polissage et protection UV de vos phares.',
     price: '45€',
     duration: '45min - 1h',
-    gradient: 'linear-gradient(150deg,#3D9CFF 0%,#020204 100%)',
+    gradient: 'linear-gradient(150deg,#3FB4E6 0%,#020204 100%)',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden>
         <path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" {...stroke} />
@@ -95,16 +95,16 @@ const SERVICES: Service[] = [
     description: 'Nettoyage minutieux, correction peinture, protection carrosserie, finition premium.',
     price: '149€',
     duration: '3h - 5h',
-    gradient: 'linear-gradient(150deg,#007BFF 0%,#000000 100%)',
+    gradient: 'linear-gradient(150deg,#0E89BA 0%,#000000 100%)',
     featured: true,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden>
         <path
           d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5L12 2z"
-          stroke="#7CC0FF"
+          stroke="#7CD0F0"
           strokeWidth="1.6"
           strokeLinejoin="round"
-          fill="#007BFF"
+          fill="#0E89BA"
           fillOpacity="0.2"
         />
       </svg>
@@ -174,7 +174,7 @@ export default function ServicesGrid() {
                   <p className="mb-6 text-sm text-ink-soft">{s.description}</p>
                   <a
                     href="#reservation"
-                    className="flex items-center justify-center gap-2 rounded-xl border border-ink/15 bg-[#F4F6F9] px-5 py-3 text-sm font-semibold text-ink transition-all duration-300 group-hover:border-primary/40 group-hover:bg-primary/10"
+                    className="flex items-center justify-center gap-2 rounded-xl border border-ink/15 bg-[#F4F4F3] px-5 py-3 text-sm font-semibold text-ink transition-all duration-300 group-hover:border-primary/40 group-hover:bg-primary/10"
                   >
                     Choisir cette formule
                     <span className="transition-transform duration-300 ease-premium group-hover:translate-x-1">→</span>

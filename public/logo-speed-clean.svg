@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" role="img" aria-label="Speed &amp; Clean">
+  <defs>
+    <linearGradient id="scBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FC0E8"/>
+      <stop offset="55%" stop-color="#0E89BA"/>
+      <stop offset="100%" stop-color="#0A5F86"/>
+    </linearGradient>
+    <linearGradient id="scSilver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fafafa"/>
+      <stop offset="45%" stop-color="#B8B7B6"/>
+      <stop offset="100%" stop-color="#6e6d6c"/>
+    </linearGradient>
+    <linearGradient id="scBlueText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3FB4E6"/>
+      <stop offset="100%" stop-color="#0C74A0"/>
+    </linearGradient>
+    <linearGradient id="scSilverText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9d8d7"/>
+      <stop offset="55%" stop-color="#B8B7B6"/>
+      <stop offset="100%" stop-color="#7a7978"/>
+    </linearGradient>
+  </defs>
+
+  <svg x="0" y="0" width="200" height="200" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="47" fill="#0B0B0B"/>
+    <path d="M50 5 A45 45 0 0 1 93 40" fill="none" stroke="url(#scBlue)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M50 8 A42 42 0 0 1 88 40" fill="none" stroke="url(#scBlue)" stroke-width="1" opacity=".5" stroke-linecap="round"/>
+    <path d="M93 60 A45 45 0 0 1 53 95" fill="none" stroke="url(#scSilver)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M88 60 A42 42 0 0 1 55 92" fill="none" stroke="url(#scSilver)" stroke-width="1" opacity=".5" stroke-linecap="round"/>
+    <g transform="translate(50,52) skewX(-8) translate(-50,-52)">
+      <path d="M62,26 C50,17 30,19 25,30 C21,40 34,44 49,48 C65,52 71,60 66,71 C61,81 42,85 30,77" fill="none" stroke="url(#scBlue)" stroke-width="15" stroke-linecap="round"/>
+      <path d="M78,32 A23,23 0 1,0 78,72" fill="none" stroke="url(#scSilver)" stroke-width="15"/>
+    </g>
+  </svg>
+
+  <g transform="skewX(-8)" font-family="'Arial Black','Arial Bold',Arial,sans-serif" font-weight="900" font-style="italic" font-size="88">
+    <text x="248" y="132" textLength="330" lengthAdjust="spacingAndGlyphs" fill="url(#scBlueText)">SPEED</text>
+    <text x="592" y="132" font-size="72" fill="url(#scBlueText)">&amp;</text>
+    <text x="650" y="132" textLength="330" lengthAdjust="spacingAndGlyphs" fill="url(#scSilverText)">CLEAN</text>
+  </g>
+</svg>

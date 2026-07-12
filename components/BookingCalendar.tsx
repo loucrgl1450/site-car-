@@ -43,7 +43,7 @@ export default function BookingCalendar({ selectedDate, onSelectDate, selectedSl
 
   if (!today || !month) {
     return (
-      <div className="h-[480px] animate-pulse rounded-3xl border border-ink/10 bg-[#F4F6F9]" aria-hidden />
+      <div className="h-[480px] animate-pulse rounded-3xl border border-ink/10 bg-[#F4F4F3]" aria-hidden />
     );
   }
 

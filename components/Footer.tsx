@@ -8,12 +8,12 @@ export default function Footer() {
       <div
         aria-hidden
         className="absolute inset-0"
-        style={{ background: 'radial-gradient(ellipse 50% 40% at 90% 0%, rgba(0,123,255,.12), transparent 60%)' }}
+        style={{ background: 'radial-gradient(ellipse 50% 40% at 90% 0%, rgba(14,137,186,.12), transparent 60%)' }}
       />
       <div className="relative mx-auto grid max-w-[1240px] gap-11 border-b border-white/10 px-6 pb-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <a href="#hero" aria-label="Retour à l'accueil" className="mb-4 inline-block">
-            <Logo size={44} wordmarkClass="text-white" />
+            <Logo height={44} />
           </a>
           <p className="mb-5 text-sm leading-relaxed text-silver-dim">
             Detailing automobile premium. La référence pour sublimer votre véhicule, pour particuliers et

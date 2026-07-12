@@ -6,11 +6,11 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#007BFF',
-          dark: '#0063CC',
-          deep: '#0A4D9E',
-          light: '#3D9CFF',
-          glow: '#7CC0FF',
+          DEFAULT: '#0E89BA',
+          dark: '#0C74A0',
+          deep: '#0A5F86',
+          light: '#3FB4E6',
+          glow: '#7CD0F0',
         },
         ink: {
           DEFAULT: '#0B0B0B',
@@ -18,7 +18,7 @@ const config: Config = {
           mute: '#6B7076',
         },
         silver: {
-          DEFAULT: '#C0C0C0',
+          DEFAULT: '#B8B7B6',
           dim: '#8A8A8E',
         },
       },
@@ -27,8 +27,8 @@ const config: Config = {
       },
       boxShadow: {
         card: '0 10px 30px -18px rgba(11,11,11,.18)',
-        'card-hover': '0 24px 50px -20px rgba(0,123,255,.3)',
-        cta: '0 8px 30px -8px rgba(0,123,255,.55)',
+        'card-hover': '0 24px 50px -20px rgba(14,137,186,.3)',
+        cta: '0 8px 30px -8px rgba(14,137,186,.55)',
       },
       transitionTimingFunction: {
         premium: 'cubic-bezier(.16,.84,.44,1)',

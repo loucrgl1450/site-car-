@@ -24,7 +24,7 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: [0.16, 0.84, 0.44, 1] }}
             className="mb-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[1.5px] text-primary-dark"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_10px_2px_rgba(0,123,255,.6)]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_10px_2px_rgba(14,137,186,.6)]" />
             Detailing automobile premium
           </motion.span>
 
@@ -57,7 +57,7 @@ export default function Hero() {
           >
             <a
               href="#reservation"
-              className="rounded-lg bg-gradient-to-r from-primary to-primary-light px-8 py-4 font-semibold text-white shadow-cta transition-all duration-300 ease-premium hover:-translate-y-1 hover:shadow-[0_14px_36px_-8px_rgba(0,123,255,.75)]"
+              className="rounded-lg bg-gradient-to-r from-primary to-primary-light px-8 py-4 font-semibold text-white shadow-cta transition-all duration-300 ease-premium hover:-translate-y-1 hover:shadow-[0_14px_36px_-8px_rgba(14,137,186,.75)]"
             >
               Prendre rendez-vous
             </a>
@@ -80,7 +80,7 @@ export default function Hero() {
           <div
             role="img"
             aria-label="Carrosserie noire lustrée avec reflet lumineux, résultat d'un detailing Speed & Clean"
-            className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-ink/10 shadow-[0_40px_80px_-30px_rgba(0,123,255,.35)]"
+            className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-ink/10 shadow-[0_40px_80px_-30px_rgba(14,137,186,.35)]"
           >
             <svg className="absolute inset-0 h-full w-full" viewBox="0 0 420 420" preserveAspectRatio="xMidYMid slice" aria-hidden>
               <defs>
@@ -90,15 +90,15 @@ export default function Hero() {
                   <stop offset="100%" stopColor="#000000" />
                 </linearGradient>
                 <linearGradient id="heroSweep" x1="0" y1="1" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#3D9CFF" stopOpacity="0" />
-                  <stop offset="45%" stopColor="#bcdcff" stopOpacity=".65" />
-                  <stop offset="55%" stopColor="#eaf4ff" stopOpacity=".85" />
-                  <stop offset="65%" stopColor="#bcdcff" stopOpacity=".65" />
-                  <stop offset="100%" stopColor="#3D9CFF" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#3FB4E6" stopOpacity="0" />
+                  <stop offset="45%" stopColor="#bfe4f2" stopOpacity=".65" />
+                  <stop offset="55%" stopColor="#eaf6fb" stopOpacity=".85" />
+                  <stop offset="65%" stopColor="#bfe4f2" stopOpacity=".65" />
+                  <stop offset="100%" stopColor="#3FB4E6" stopOpacity="0" />
                 </linearGradient>
                 <radialGradient id="heroRim" cx="100%" cy="0%" r="75%">
-                  <stop offset="0%" stopColor="#007BFF" stopOpacity=".5" />
-                  <stop offset="100%" stopColor="#007BFF" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#0E89BA" stopOpacity=".5" />
+                  <stop offset="100%" stopColor="#0E89BA" stopOpacity="0" />
                 </radialGradient>
                 <filter id="heroBlur" x="-150%" y="-150%" width="400%" height="400%">
                   <feGaussianBlur stdDeviation="12" />
@@ -116,7 +116,7 @@ export default function Hero() {
               <path d="M-80 330 L260 -40 L300 -40 L-40 330 Z" fill="url(#heroSweep)" opacity=".35" filter="url(#heroBlur)" />
               <path d="M-40 300 L230 -20 L255 -20 L-15 300 Z" fill="url(#heroSweep)" filter="url(#heroBlur)" />
               <path d="M-20 285 L245 -10 L253 -10 L-12 285 Z" fill="#ffffff" opacity=".5" />
-              <g opacity=".8" fill="#eaf4ff">
+              <g opacity=".8" fill="#eaf6fb">
                 <circle cx="120" cy="150" r="3" />
                 <circle cx="150" cy="210" r="2" />
                 <circle cx="245" cy="120" r="2.5" />

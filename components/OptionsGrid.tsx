@@ -97,7 +97,7 @@ const OPTIONS: Option[] = [
 
 export default function OptionsGrid() {
   return (
-    <section id="options" className="bg-[#F4F6F9] py-24 lg:py-32">
+    <section id="options" className="bg-[#F4F4F3] py-24 lg:py-32">
       <div className="mx-auto max-w-[1240px] px-6">
         <Reveal className="mb-14 max-w-[640px]">
           <span className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[1.5px] text-primary-dark">

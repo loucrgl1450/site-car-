@@ -61,7 +61,7 @@ const VALUES = [
 
 export default function About() {
   return (
-    <section id="apropos" className="bg-[#F4F6F9] py-24 lg:py-32">
+    <section id="apropos" className="bg-[#F4F4F3] py-24 lg:py-32">
       <div className="mx-auto grid max-w-[1240px] items-center gap-14 px-6 lg:grid-cols-[.9fr_1.1fr]">
         <Reveal>
           <div
@@ -72,18 +72,18 @@ export default function About() {
             <svg className="absolute inset-0 h-full w-full" viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" aria-hidden>
               <defs>
                 <linearGradient id="aboutBg" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#0A4D9E" />
+                  <stop offset="0%" stopColor="#0A5F86" />
                   <stop offset="55%" stopColor="#0a0d12" />
                   <stop offset="100%" stopColor="#000" />
                 </linearGradient>
                 <radialGradient id="aboutFoam" cx="30%" cy="25%" r="60%">
-                  <stop offset="0%" stopColor="#eaf4ff" stopOpacity=".5" />
-                  <stop offset="100%" stopColor="#eaf4ff" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#eaf6fb" stopOpacity=".5" />
+                  <stop offset="100%" stopColor="#eaf6fb" stopOpacity="0" />
                 </radialGradient>
               </defs>
               <rect width="480" height="360" fill="url(#aboutBg)" />
               <rect width="480" height="360" fill="url(#aboutFoam)" />
-              <g fill="#eaf4ff" opacity=".85">
+              <g fill="#eaf6fb" opacity=".85">
                 <circle cx="90" cy="80" r="4" />
                 <circle cx="130" cy="60" r="2.5" />
                 <circle cx="170" cy="95" r="3" />
@@ -92,8 +92,8 @@ export default function About() {
                 <circle cx="380" cy="90" r="3.5" />
                 <circle cx="270" cy="150" r="2" />
               </g>
-              <path d="M0 300 C120 260, 240 260, 480 310 L480 360 L0 360 Z" fill="#007BFF" opacity=".25" />
-              <path d="M0 320 C140 285, 280 285, 480 330 L480 360 L0 360 Z" fill="#3D9CFF" opacity=".2" />
+              <path d="M0 300 C120 260, 240 260, 480 310 L480 360 L0 360 Z" fill="#0E89BA" opacity=".25" />
+              <path d="M0 320 C140 285, 280 285, 480 330 L480 360 L0 360 Z" fill="#3FB4E6" opacity=".2" />
             </svg>
             <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-6">

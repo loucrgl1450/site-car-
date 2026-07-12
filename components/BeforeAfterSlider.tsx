@@ -34,7 +34,7 @@ export default function BeforeAfterSlider() {
   };
 
   return (
-    <section id="avantapres" className="bg-[#F4F6F9] py-24 lg:py-32">
+    <section id="avantapres" className="bg-[#F4F4F3] py-24 lg:py-32">
       <div className="mx-auto max-w-[1240px] px-6">
         <Reveal className="mb-14 max-w-[640px]">
           <span className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[1.5px] text-primary-dark">
@@ -54,13 +54,13 @@ export default function BeforeAfterSlider() {
             onPointerMove={onPointerMove}
             onPointerUp={onPointerUp}
             onPointerCancel={onPointerUp}
-            className="relative aspect-[16/8] w-full cursor-ew-resize touch-none select-none overflow-hidden rounded-3xl border border-ink/10 shadow-[0_30px_60px_-30px_rgba(0,123,255,.3)]"
+            className="relative aspect-[16/8] w-full cursor-ew-resize touch-none select-none overflow-hidden rounded-3xl border border-ink/10 shadow-[0_30px_60px_-30px_rgba(14,137,186,.3)]"
           >
             {/* Après */}
             <div
               aria-hidden
               className="absolute inset-0"
-              style={{ background: 'linear-gradient(150deg,#007BFF 0%,#020204 100%)' }}
+              style={{ background: 'linear-gradient(150deg,#0E89BA 0%,#020204 100%)' }}
             >
               <div
                 className="absolute inset-0 opacity-60"
